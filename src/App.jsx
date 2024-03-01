@@ -3,24 +3,24 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Componets/Header'
+import Slider from './Componets/Slider'
+import ProductionHouse from './Componets/ProductionHouse'
+import GenreMovieList from './Componets/GenreMovieList'
+
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="">
-      <Header/>
-      <div className='flex items-center gap-4'>
-      <button onClick={() => setCount((count) => count + 1)}>
-        Points to Adarsh :
-      </button>
-      <div>
-        {count}
-        </div>
-      </div>
-      <div className="text-bold underline my-2">
-        Using Tailwind CSS
-      </div>
+        <Header/>
+        
+        <Slider/>
+
+        <ProductionHouse/>
+
+        <GenreMovieList/>
     </div>
   )
 }
